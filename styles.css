@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  

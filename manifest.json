@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Word Counter",
+  "version": "1.0",
+  "description": "A lite tool for counting words and characters via right-click menu.",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "tabs"
+  ],
+  "action": {
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
